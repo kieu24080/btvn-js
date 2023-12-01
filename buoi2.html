@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let x = 0
+        // while (x < 10) {
+        //     console.log(x);
+        //     x++;
+        // }
+        // let y = 9;
+
+        // GHI NHỚ
+        // do {
+        //     console.log(y);
+        //     y--;
+        // } while ( y > 0 )
+
+        // while(điều kiện){
+        //     code ở đây
+        // }
+
+        // do{
+        //     code ở đây
+        // }while(đk)
+
+        // for(dk1;dk2;dk3){
+        //     code ở đây
+        // }
+        // dk1: câu lệnh khai báo biến
+        // dk2: biểu thức đk
+        // dk3: biểu thức làm thay đổi giá trị của biến
+
+        // for(var i=0; i<10; i++){
+        //     console.log(i)
+        // }
+
+        // for (var i = 0; i < 6; i++) {
+        //     if (i == 4) {
+        //         console.log("JSA")
+        //     } else {
+        //         console.log("MINDX")
+        //     }
+        // }
+        let myBook = ["cam ngọt", "dế mèn", "con cừu", "giầy ba lê","kẻ cắp","kì qoái"]
+        console.log(myBook);
+        console.log(myBook[4])
+        console.log(myBook.length)
+        for(let i=0;i<=myBook.length-1;i++){
+console.log(i + ": " + myBook[i])
+        }
+        console.log("cách 2")
+        for( let i=0; i< myBook.length; i++){
+            console.log(i + ": " + myBook[i])
+        }
+
+        myBook.push("đứa trẻ","chú chó","mèo đen")
+        // console.log(myBook)
+        // myBook.pop()
+        // console.log(myBook)
+        // myBook.shift()
+        // console.log(myBook)
+        myBook.splice(2, 3 ,"xxxx","z","q")
+        console.log(myBook)
+    </script>
+</body>
+
+</html>
