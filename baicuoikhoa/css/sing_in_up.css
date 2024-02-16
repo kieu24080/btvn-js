@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "karma", sans-serif;
+    flex-wrap: wrap;
+}
+
+body {
+    font-size: 20px;
+    line-height: 2;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    background: url(https://images2.alphacoders.com/510/510797.jpg )center top no-repeat, url(../img/star-bg.jpg) center bottom no-repeat, black;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header {
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    height: 90px;
+}
+
+.nav_item {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: inline-block;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.nav {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+.nav a:hover {
+    color: aqua;
+}
+
+.logo img {
+    width: 250px;
+    height: 90px;
+}
+
+.mom h1 {
+    font-weight: 1000px;
+    padding-bottom: 15px;
+    /* color:  rgb(125, 174, 175); */
+}
+
+.mom {
+    border-radius: 5px;
+    text-align: center;
+    max-width: 600px;
+    margin-top: 150px;
+    margin: 150px auto;
+    background-color: rgba(84, 84, 84, 0.457);
+    padding: 15px;
+    box-shadow: double;
+    color: aliceblue;
+}
+
+.user-box {
+    padding: 10px;
+
+}
+.selector .account{
+    text-decoration: none;
+    color: aqua;
+}
+.selector .account:hover{
+    color: red;
+}
+form input {
+    padding: 6px 10px;
+    /* background-color:  #02549c; */
+}
+
+form button {
+    padding: 8px 16px;
+    background-color: rgb(125, 174, 175);
+    border: none;
+    cursor: pointer;
+    box-shadow: inherit;
+}
+
+form button:hover {
+    background-color: rgb(69, 177, 177);
+}
+
+.selector {
+    padding: 20px;
+    font-size: 15px;
+
+}
+
+form input,
+button {
+    border-radius: 15px;
+}
