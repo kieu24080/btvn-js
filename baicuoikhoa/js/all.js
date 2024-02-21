@@ -19,105 +19,103 @@ function carousel() {
 }
 
 
+
 let shop = {
     data: [
         {
             id: 1,
-            name: "MATRIX 1999 DECK",
-            price: "780.000đ - 1.470.000đ",
-            image: "images/matrix-1999-1.jpg"
+            name: "Dream Ritual Oracle",
+            price: "130đ",
+            image: "https://mystichouse.vn/wp-content/uploads/2024/02/Dream-Ritual-Oracle-1-367x367.jpg"
         },
 
         {
             id: 2,
-            name: "RAEDA DECK",
-            price: "780.000đ - 1.470.000đ",
-            image: "images/Raeda-Deck.jpg"
+            name: "Witch Tarot (Tarot PVC Series)",
+            price: "120đ",
+            image: "https://mystichouse.vn/wp-content/uploads/2024/02/Witch-Tarot-Tarot-PVC-Series-1.jpg"
         },
 
         {
             id: 3,
-            name: "MUSTY DECK",
-            price: "780.000đ - 1.470.000đ",
-            image: "images/Musty-Deck.jpg"
+            name: "Starman Tarot Deck",
+            price: "150đ",
+            image: "https://mystichouse.vn/wp-content/uploads/2024/02/Starman-Tarot-Deck-1.jpg"
         },
 
         {
             id: 4,
-            name: "TRISTIQUE DECK",
-            price: "780.000đ - 1.470.000đ",
-            image: "images/Tristique-deck.jpg"
+            name: "Portent Tarot",
+            price: "120đ",
+            image: "https://mystichouse.vn/wp-content/uploads/2024/01/Angels-and-Ancestors-Oracle-Pocket-Edition-1-367x367.jpg"
         },
 
         {
             id: 5,
-            name: "FIELD TRIP DECK",
-            price: "780.000đ - 1.470.000đ",
-            image: "images/Fied-Trip-deck.jpg"
+            name: "Cozy Witch Tarot",
+            price: "110đ",
+            image: "https://mystichouse.vn/wp-content/uploads/2024/01/Portent-Tarot-1.jpg"
         },
 
         {
             id: 6,
-            name: "TARO RAINBOW LOGO DECK",
-            price: "780.000đ - 1.670.000đ",
-            image: "images/web-5.jpg"
+            name: "Soul’s Journey Oracle",
+            price: "90đ",
+            image: "https://mystichouse.vn/wp-content/uploads/2015/11/Deviant-Moon-Tarot-cover-400x400.jpg"
         },
 
         {
             id: 7,
-            name: "NEON RAINBOW LOGO DECK",
-            price: "780.000đ - 1.670.000đ",
-            image: "images/web-1.jpg"
+            name: "Healing Heart Oracle",
+            price: "100đ",
+            image: "https://mystichouse.vn/wp-content/uploads/2016/01/Deviant-Moon-Tarot-Premier-Edition-400x400.jpg"
         },
 
         {
             id: 8,
-            name: "ORANAGE RAINBOW LOGO DECK",
-            price: "780.000đ - 1.670.000đ",
-            image: "images/web-2.jpg"
+            name: " Inspirational Wicca Oracle",
+            price: "120đ",
+            image: "https://mystichouse.vn/wp-content/uploads/2015/10/Deviant-Moon-Tarot-Borderless-Edition-400x400.jpg"
         },
 
         {
             id: 9,
-            name: "BLUE RAINBOW LOGO DECK",
-            price: "780.000đ - 1.670.000đ",
-            image: "images/web-3.jpg"
+            name: "Neon Moon Lenormand",
+            price: "130đ",
+            image: "https://mystichouse.vn/wp-content/uploads/2015/11/Joie-de-Vivre-Tarot-cover-450x450.jpg"
         },
 
         {
             id: 10,
-            name: "WHITE RAINBOW LOGO DECK",
-            price: "780.000đ - 1.670.000đ",
-            image: "images/web-4.jpg"
+            name: "Classic Horror Oracle",
+            price: "140đ",
+            image: "https://mystichouse.vn/wp-content/uploads/2015/11/Gothic-Tarot-cover-450x450.jpg"
         },
 
         {
             id: 11,
-            name: "CUTIS MODEL DECK",
-            price: "780.000đ - 1.670.000đ",
-            image: "images/cutis.jpg"
+            name: "A Compendium of Witches Oracle",
+            price: "140đ",
+            image: "https://mystichouse.vn/wp-content/uploads/2023/02/A-Compendium-of-Witches-Oracle-1-367x367.jpg"
         },
 
         {
             id: 12,
-            name: "CAM VU MODEL DECK",
-            price: "780.000đ - 1.670.000đ",
-            image: "images/cam-vu.jpg"
+            name: "Soul Mirror Oracle",
+            price: "150đ",
+            image: "https://mystichouse.vn/wp-content/uploads/2021/08/Amor-et-Psyche-Oracle-1-367x367.jpg"
         },
 
-        {
-            id: 13,
-            name: "SON NGUYEN MODEL DECK",
-            price: "780.000đ - 1.670.000đ",
-            image: "images/son-nguyen.jpg"
-        },
+
     ]
 }
 for (let items of shop.data) {
-
+ //tạo một thẻ div và cho thẻ div đó có class là card
     let card = document.createElement("div")
     card.classList.add("card")
+ //thêm thẻ div có class là card vào shop
 
+//  document.getElementById("shop")
     let imgContainer = document.createElement("div")
     imgContainer.classList.add("image-container")
 
@@ -138,10 +136,10 @@ for (let items of shop.data) {
     price.innerHTML = "<b>Price:</b> " + items.price;
     container.appendChild(price);
 
-    let btn = document.createElement("button")
-    btn.setAttribute("onclick", "addToCart(" + items.id + ")")
+    let btn = document.createElement("button");
+    btn.setAttribute("onclick", "addToCart(" + items.id + ")");
     btn.innerHTML = "Thêm vào giỏ hàng"
-    container.appendChild(btn)
+    container.appendChild(btn);
 
     card.appendChild(container);
     document.getElementById("products").appendChild(card);
@@ -173,10 +171,12 @@ addToCart = (id) => {
     // console.log(product)
 }
 function showAll() {
-    var list = `<tr><th>tên sản phẩm </th><th>Giá cả</th><th>số lượng</th>`;
-    JSON.parse(localStorage.getItem('cart'))
-        .forEach(element => {
-            list += `<tr><td>`+ element.product.name + `</td><td>` +element.product.price +`</td><td>`+ element.quantity +`</td></tr>`;
-    });
+    var list = `<tr><th>Tên sản phẩm</th><th>Giá cả</th><th>Số lượng</th></tr>`
+    JSON.parse(localStorage.getItem('cart')).forEach(element => {
+        list += `<tr><td>` + element.product.name +
+            `</td><td>` + element.product.price +
+            `</td><td>` + element.quantity +
+            `</td></tr>`;
+    })
     document.getElementById('list').innerHTML = list;
 }

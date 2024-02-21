@@ -43,13 +43,13 @@ body {
     /* color: white; */
     text-decoration: none;
     padding: 15px;
+    color: white;
     display: inline-block;
     font-family: 'DM Sans', sans-serif;
 }
 
 .nav {
     background-color: black;
-    color: white;
     font-size: 20px;
 }
 
